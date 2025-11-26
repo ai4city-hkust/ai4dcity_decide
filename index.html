@@ -396,7 +396,7 @@
               </div>
             </div>
 
-            <div className="max-w-[3840] mx-auto px-0 py-12 md:py-16 space-y-56"> {/* 这一级是hero大图下面所有子模块的父容器 */}
+            <div className="max-w-[3840] mx-auto px-0 py-12 md:py-16 space-y-64"> {/* 这一级是hero大图下面所有子模块的父容器 */}
 
               {/* 这是News的容器 */}
               <FadeInSection className="flex flex-col md:flex-row gap-8 lg:gap-12">
@@ -424,16 +424,16 @@
               {/* Research Preview (Homepage) */}
               <FadeInSection>
                  <h2 className="px-5 text-4xl sm:text-[64px] font-bold mb-6">Research</h2>
-                 {RESEARCH_PROJECTS.slice(0,2).map((project, index) => (
+                 {RESEARCH_PROJECTS.slice(0,3).map((project, index) => (
                    // 移除 gap, 背景透明/白色 (无底色), 直角
                    <div key={project.id} className={`flex flex-col md:flex-row ${index % 2 !== 0 ? 'md:flex-row-reverse' : ''} gap-0 items-center mb-8 group hover-zoom-container overflow-hidden`}> 
-                      <div className="w-full md:w-2/3 aspect-[3/2] md:h-[350px] bg-gray-200 overflow-hidden rounded-none">
+                      <div className="w-full md:w-3/4 aspect-[3/2] md:h-[350px] bg-gray-200 overflow-hidden rounded-none">
                          <img src={project.img} className="w-full h-full object-cover hover-zoom-img" alt={project.title} />
                       </div>
                       {/* 文字区域无背景色 bg-white/transparent */}
-                      <div className="w-full md:w-1/3 p-6 flex flex-col justify-center">
+                      <div className="w-full md:w-1/4 p-6 flex flex-col justify-center">
                          <h3 className="text-2xl font-bold mb-4">{project.title}</h3>
-                         <p className="text-gray-600 mb-6 text-justify">{project.desc}</p>
+                         <p className="text-sm text-gray-600 mb-6 text-justify">{project.desc}</p>
                          <button onClick={() => setPage('research')} className="text-blue-600 font-bold hover:underline flex items-center">Read More <ChevronRight size={16}/> </button>
                       </div>
                    </div>
@@ -444,16 +444,18 @@
               <FadeInSection>
                 {/* 移除 gap, 背景透明/白色, 直角 */}
                 <div className="flex flex-col md:flex-row gap-0 h-auto overflow-hidden rounded-none">
-                  <h2 className="px-5 text-4xl sm:text-[64px] font-bold leading-none text-left">People</h2>
-                  <div className="p-6 md:w-1/3 flex flex-col justify-center text-left">
-                    <p className="text-base lg:text-lg text-gray-600 mb-8 text-justify">
-                      Our team is a diverse and talented group of researchers from around the world, committed to advancing cutting-edge research in AI-driven urban modeling.
-                    </p>
-                    <button onClick={() => setPage('team')} className="text-xl font-bold hover:underline flex items-center gap-2 text-left">
-                      Meet our team <ArrowRight size={20} />
-                    </button>
+                  <div className="w-full md:w-1/4 pt-0 pr-6 pb-6 pl-6 flex flex-col justify-top">
+                    <h2 className="px-5 text-4xl sm:text-[64px] font-bold leading-none text-left">People</h2>
+                    <div className="p-6 flex flex-col justify-center text-left">
+                      <p className="text-sm lg:text-lg text-gray-600 mb-6 text-justify">
+                        Our team is a diverse and talented group of researchers, including PhD candidates, MPhil students, Research Associates (RAs), and visiting students from around the world. Each member brings unique expertise and perspectives from varied academic and professional backgrounds, creating a dynamic collaborative environment. Together, we are committed to advancing cutting-edge research in AI-driven urban modeling and making meaningful contributions to sustainable city development.
+                      </p>
+                      <button onClick={() => setPage('team')} className="text-xl font-bold hover:underline flex items-center gap-2 text-left">
+                        Meet our team <ArrowRight size={20} />
+                      </button>
+                    </div>
                   </div>
-                  <div className="md:w-2/3 aspect-[3/2] md:aspect-auto md:h-[500px] bg-gray-300 relative overflow-hidden hover-zoom-container">
+                  <div className="md:w-3/4 aspect-[3/2] md:aspect-auto md:h-[800px] bg-gray-300 relative overflow-hidden hover-zoom-container">
                     <img src="images/people/group.jpg" className="absolute inset-0 w-full h-full object-cover hover-zoom-img" alt="Team" />
                   </div>
                 </div>
@@ -482,7 +484,7 @@
               {/* 主页的关于我们页 */}
               <FadeInSection>
                   <div id="about-section" ref={aboutRef} className="pt-12">
-                      <div className="max-w-4xl mx-auto text-center mb-8 px-6">
+                      <div className="max-w-4xl mx-auto text-center mb-8 px-0">
                           <h2 className="text-4xl sm:text-5xl font-bold mb-6">About Us</h2>
                           <h3 className="text-2xl font-semibold mb-4">AI 4D City(AI4CITY) Lab</h3>
                           <p className="text-lg text-gray-600 leading-relaxed text-justify">
