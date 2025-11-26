@@ -17,6 +17,7 @@
         }
     }
     </script>
+    <link href="tailwind.config.js" rel="stylesheet">
     <style>
         /* 全局滚动上浮动画 */
         .fade-in-section {
@@ -395,12 +396,12 @@
               </div>
             </div>
 
-            <div className="max-w-7xl mx-auto px-6 py-12 md:py-16 space-y-56"> {/* 这一级是hero大图下面所有子模块的父容器 */}
+            <div className="max-w-[3840] mx-auto px-0 py-12 md:py-16 space-y-56"> {/* 这一级是hero大图下面所有子模块的父容器 */}
 
               {/* 这是News的容器 */}
               <FadeInSection className="flex flex-col md:flex-row gap-8 lg:gap-12">
                 <div className="w-full md:w-1/4">
-                   <h2 className="text-4xl sm:text-[64px] font-bold leading-none">News <br/>& <br/> Events</h2>
+                   <h2 className="px-5 text-4xl sm:text-[64px] 3xl:text-[96px] font-bold leading-none">News <br/>& <br/> Events</h2>
                 </div>
                 <div className="w-full md:w-3/4 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 lg:gap-8">
                    {NEWS_ITEMS.map(item => (
@@ -412,7 +413,7 @@
                        <div className="aspect-square w-full bg-gray-200 overflow-hidden rounded-none">
                          <img src={item.img} alt={item.title} className="w-full h-full object-cover hover-zoom-img" />
                        </div>
-                       <h3 className="font-bold text-xl leading-tight group-hover:text-blue-600">{item.title}</h3>
+                       <h3 className="font-bold text-xl sm:text-[24px] 3xl:text-[32px] leading-tight group-hover:text-blue-600">{item.title}</h3>
                        <p className="text-sm text-gray-600">{item.desc}</p>
                        <p className="text-xs text-gray-400 mt-auto pt-2">{item.meta}</p>
                      </div>
@@ -422,7 +423,7 @@
 
               {/* Research Preview (Homepage) */}
               <FadeInSection>
-                 <h2 className="text-4xl sm:text-[64px] font-bold mb-6">Research</h2>
+                 <h2 className="px-5 text-4xl sm:text-[64px] font-bold mb-6">Research</h2>
                  {RESEARCH_PROJECTS.slice(0,2).map((project, index) => (
                    // 移除 gap, 背景透明/白色 (无底色), 直角
                    <div key={project.id} className={`flex flex-col md:flex-row ${index % 2 !== 0 ? 'md:flex-row-reverse' : ''} gap-0 items-center mb-8 group hover-zoom-container overflow-hidden`}> 
@@ -443,7 +444,7 @@
               <FadeInSection>
                 {/* 移除 gap, 背景透明/白色, 直角 */}
                 <div className="flex flex-col md:flex-row gap-0 h-auto overflow-hidden rounded-none">
-                  <h2 className="text-4xl sm:text-[64px] font-bold leading-none text-left">People</h2>
+                  <h2 className="px-5 text-4xl sm:text-[64px] font-bold leading-none text-left">People</h2>
                   <div className="p-6 md:w-1/3 flex flex-col justify-center text-left">
                     <p className="text-base lg:text-lg text-gray-600 mb-8 text-justify">
                       Our team is a diverse and talented group of researchers from around the world, committed to advancing cutting-edge research in AI-driven urban modeling.
@@ -461,8 +462,8 @@
               {/* 主页的数据页 */}
               <FadeInSection className="flex flex-col md:flex-row gap-8 lg:gap-12">
                 <div className="w-full md:w-1/4">
-                   <h2 className="text-4xl sm:text-[64px] font-bold leading-none">Resource <br/>& <br/>Data</h2>
-                   <button onClick={() => setPage('resources')} className="mt-6 text-lg font-bold hover:underline flex items-center gap-2">
+                   <h2 className="px-5 text-4xl sm:text-[64px] font-bold leading-none">Resource <br/>& <br/>Data</h2>
+                   <button onClick={() => setPage('resources')} className="px-5 mt-6 text-lg font-bold hover:underline flex items-center gap-2">
                         Find something good <ChevronRight size={16}/>
                    </button>
                 </div>
@@ -610,7 +611,7 @@
           return (
               <div className="pt-[81px] w-full min-h-screen">
                   <div className="max-w-4xl mx-auto px-6 py-16 md:py-20 flex flex-col items-center">
-                      <h1 className="text-3xl md:text-5xl font-bold text-center mb-6 leading-tight">{content.title}</h1>
+                      <h1 className="text-3xl md:text-4xl 3xl:text-5xl font-bold text-center mb-6 leading-[2]">{content.title}</h1>
                       <div className="text-gray-500 mb-12 text-sm md:text-base">{content.date} • By {content.author}</div>
                       
                       <div className="w-full aspect-video bg-gray-100 shadow-sm mb-16 rounded-2xl overflow-hidden">
