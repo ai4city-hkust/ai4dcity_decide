@@ -173,7 +173,66 @@
                 ],
                 
             },
-          };
+            // --- NEW: Research Detail Pages ---
+           'research-3d-visual': {
+                title: "研究项目 | 3D visual understanding and reconstruction (项目详情)",
+                subtitle: "基于人工智能的城市三维感知与重建",
+                date: "Updated Nov 17 2025",
+                author: "AI4City Research Team",
+                img: "images/research/ScreenShot_2025-11-27_014217_401.png",
+                abstract: "该项目侧重于使用先进的深度学习模型，从多源数据中实现城市环境的精确三维重建和语义理解。",
+                body: [
+                    "当前工作涉及开发新颖的神经渲染技术，以实现城市规模的高保真三维模型。我们的方法集成了最先进的视觉 Transformer 和多视图几何约束，以确保视觉质量和几何精度的统一。未来的研究将集中于整合动态时间信息，以实现 4D 时空建模。",
+                    "主要技术挑战包括如何处理大规模、不规则的城市数据，以及如何在保持计算效率的同时，提升重建模型的语义丰富性。",
+                    { type: 'image', src: 'https://via.placeholder.com/800x400/4CAF50/FFFFFF?text=3D+Reconstruction+Visual+Example', caption: '项目三维重建效果图' },
+                    "欢迎对 3D 视觉和城市计算感兴趣的同学加入本研究项目！"
+                ]
+            },
+            'research-multimodal': {
+                title: "研究项目 | Multimodal Spatiotemporal Data Mining and Interaction (项目详情)",
+                subtitle: "多模态时空数据挖掘与交互",
+                date: "Updated Oct 10 2025",
+                author: "AI4City Research Team",
+                img: "images/research/ScreenShot_2025-11-27_014246_087.png",
+                abstract: "利用多源时空数据（遥感、街景、社交媒体等）进行城市动态分析和预测建模。",
+                body: [
+                    "该项目致力于融合遥感影像、LiDAR 点云、社交媒体数据等多模态信息流，以捕捉复杂的城市现象。我们正在构建基于图神经网络（GNN）的模型，用于预测交通流量、犯罪热点和基础设施故障。",
+                    "其中一个子项目是基于LLM（大语言模型）的小商业选址应用构建，旨在结合宏观地理数据和微观街景/POI数据，为创业者提供客观的选址评估和经营模式调整建议。",
+                ]
+            },
+            // --- NEW: Publication Detail Pages ---
+            'pub-urban-resilience': {
+                title: "论文 | AI for Urban Resilience (详细摘要)",
+                subtitle: "发表于 Nature Cities",
+                date: "2025",
+                author: "Zhao et al.",
+                img: "https://via.placeholder.com/1000x600/333/fff?text=Paper+Cover",
+                abstract: "本文讨论了人工智能在城市韧性规划和灾害响应机制中的影响，并提出了一个基于多智能体系统（Multi-Agent System）的城市韧性评估框架。",
+                body: [
+                    "城市韧性（Urban Resilience）是应对气候变化和突发事件的关键。本研究利用卫星遥感和IoT数据，通过深度学习模型实时监测城市基础设施的健康状况，并在灾害发生前提供预警。",
+                    "我们的研究结果表明，基于AI的早期预警系统可以将灾害造成的损失减少20%以上。",
+                    "全文链接：[PDF Link Placeholder] | DOI: 10.1038/s43248-025-00000-x"
+                ]
+            },
+            // --- NEW: Resource Detail Pages ---
+            'res-point-cloud': {
+                title: "资源 | Dataset: HK Urban Point Cloud (详情)",
+                subtitle: "香港城市点云数据集 v1.0",
+                date: "v1.0 Release",
+                author: "AI4City Lab",
+                img: "https://via.placeholder.com/1000x600/555/fff?text=Dataset+Preview",
+                abstract: "这是一个大规模的点云数据集，涵盖了香港主要城市区域，适用于语义分割和三维重建任务。",
+                body: [
+                    "数据集包含超过 10 亿个点，通过机载和车载 LiDAR 采集。数据已进行预处理，并提供了 15 个主要城市类别的语义标签。",
+                    "数据格式: LAS/PLY",
+                    "数据大小: 约 500 GB (压缩后)",
+                    "使用条款: 仅限学术研究用途。",
+                    "下载链接: [Download Link Placeholder]",
+                    "相关文献: [Citation Link Placeholder]"
+                ]
+            },
+          };
+          
         // --- 首页数据 ---
         // 新闻 (6个格子)
         const NEWS_ITEMS = [
@@ -234,7 +293,10 @@
             name: "Wufan Zhao",
             role: "Principal Investigator",
             bio: "Dr. Wufan Zhao is currently an Assistant Professor at the Urban Governance and Design (UGOD) Thrust, The Hong Kong University of Science and Technology (Guangzhou). He is the Principal Investigator (PI) of AI4DCity Lab. His research primarily focuses on AI-based remote sensing image understanding, 3D city modeling, and multi-modal spatiotemporal data fusion.",
-            img: "https://via.placeholder.com/300x300/1a1a1a/ffffff?text=Wufan+Zhao"
+            edu: "PhD in Remote sensing and Earth Observation, ITC, University of Twente (2022)MSc in Geoinformatics, Nanjing Normal University & University of Salzrburg (2018)BSc in GIS, Northwest A&F University (2015)",
+            Awards: "Top 30 reviewers of the ISPRS Journal of Photogrammetry and Remote Sensing for 2023.UTwente ITC Ph.D. Publication Award, 2022 CSC Scholarship, 2018-2022",
+            ri: "AI based remote sensing data processing and 3D modeling Spatio-temporal data science and digital twin cities Urban complex systems and uncertainty",
+            img: "images/people/wufan.jpg"
           },
           phd: [
             { name: "Xiaozhuo Li", role: "Large Scale 3D Reconstruction", email: "xl@ust.hk", homepage: "https://example.com/xl", img: "https://via.placeholder.com/200/ddd/333?text=XL" },
@@ -244,65 +306,69 @@
           ]
         };
         // --- 列表页数据 ---
-        const RESEARCH_PROJECTS = [
-          {
-            id: 1, title: "3D visual understanding and reconstruction",
-            desc: "Application of Generative AI in Urban Scenarios Visual Localization and Multi-View Reconstruction Intelligent Processing of Multimodal Remote Sensing Data.",
-            img: "images/research/ScreenShot_2025-11-27_014217_401.png", date: "Updated Nov 17 2025"
-          },
-          {
-            id: 2, title: "Multimodal Spatiotemporal Data Mining and Interaction",
-            desc: "Application of Generative AI in Urban ScenariosVisual Localization and Multi-View Reconstruction Intelligent Processing of Multimodal Remote Sensing Data.",
-            img: "images/research/ScreenShot_2025-11-27_014246_087.png", date: "Updated Oct 10 2025"
-          },
-          {
-            id: 3, title: "Multimodal Spatiotemporal Data Mining and Interaction",
-            desc: "Application of Generative AI in Urban Scenarios Visual Localization and Multi-View Reconstruction Intelligent Processing of Multimodal Remote Sensing Data.",
-            img: "images/research/ScreenShot_2025-11-27_014234_200.png", date: "Updated Sep 05 2025"
-          },
-          {
-            id: 4, title: "Spatiotemporal Data Mining for Smart City Traffic Flow",
-            desc: "Analyzing traffic patterns using graph neural networks to predict congestion and optimize traffic light timings in real-time.",
-            img: "https://via.placeholder.com/380x253/444/fff?text=Traffic+AI", date: "Updated Sep 05 2025"
-          }
-        ];
+        // --- 列表页数据 (新增 articleId 字段) ---
+        const RESEARCH_PROJECTS = [
+          {
+            id: 1, title: "3D visual understanding and reconstruction",
+            desc: "Application of Generative AI in Urban Scenarios Visual Localization and Multi-View Reconstruction Intelligent Processing of Multimodal Remote Sensing Data.",
+            img: "images/research/ScreenShot_2025-11-27_014217_401.png", date: "Updated Nov 17 2025",
+            articleId: 'research-3d-visual' // NEW LINK
+          },
+          {
+            id: 2, title: "Multimodal Spatiotemporal Data Mining and Interaction",
+            desc: "Application of Generative AI in Urban ScenariosVisual Localization and Multi-View Reconstruction Intelligent Processing of Multimodal Remote Sensing Data.",
+            img: "images/research/ScreenShot_2025-11-27_014246_087.png", date: "Updated Oct 10 2025",
+            articleId: 'research-multimodal' // NEW LINK
+          },
+          {
+            id: 3, title: "Multimodal Spatiotemporal Data Mining and Interaction",
+            desc: "Application of Generative AI in Urban Scenarios Visual Localization and Multi-View Reconstruction Intelligent Processing of Multimodal Remote Sensing Data.",
+            img: "images/research/ScreenShot_2025-11-27_014234_200.png", date: "Updated Sep 05 2025"
+          },
+          {
+            id: 4, title: "Spatiotemporal Data Mining for Smart City Traffic Flow",
+            desc: "Analyzing traffic patterns using graph neural networks to predict congestion and optimize traffic light timings in real-time.",
+            img: "https://via.placeholder.com/380x253/444/fff?text=Traffic+AI", date: "Updated Sep 05 2025"
+          }
+        ];
 
-        const PUBLICATION_ITEMS = [
-            {
-                id: 1, title: "AI for Urban Resilience",
-                desc: "Published in Nature Cities. This paper discusses the impact of AI on urban resilience planning and disaster response mechanisms.",
-                img: "https://via.placeholder.com/380x253/333/fff?text=Paper+1", date: "2025"
-            },
-            {
-                id: 2, title: "CVPR 2025 Oral Presentation",
-                desc: "Our latest work on large-scale 3D reconstruction was selected for an oral presentation at CVPR 2025.",
-                img: "https://via.placeholder.com/380x253/444/fff?text=Conf+Paper", date: "2025"
-            },
-            {
-                id: 3, title: "Multimodal Fusion in Remote Sensing",
-                desc: "A comprehensive review of recent advances in multimodal data fusion for earth observation.",
-                img: "https://via.placeholder.com/380x253/555/fff?text=Review", date: "2024"
-            }
-        ];
+        const PUBLICATION_ITEMS = [
+            {
+                id: 1, title: "AI for Urban Resilience",
+                desc: "Published in Nature Cities. This paper discusses the impact of AI on urban resilience planning and disaster response mechanisms.",
+                img: "https://via.placeholder.com/380x253/333/fff?text=Paper+1", date: "2025",
+                articleId: 'pub-urban-resilience' // NEW LINK
+            },
+            {
+                id: 2, title: "CVPR 2025 Oral Presentation",
+                desc: "Our latest work on large-scale 3D reconstruction was selected for an oral presentation at CVPR 2025.",
+                img: "https://via.placeholder.com/380x253/444/fff?text=Conf+Paper", date: "2025"
+            },
+            {
+                id: 3, title: "Multimodal Fusion in Remote Sensing",
+                desc: "A comprehensive review of recent advances in multimodal data fusion for earth observation.",
+                img: "https://via.placeholder.com/380x253/555/fff?text=Review", date: "2024"
+            }
+        ];
 
-        const RESOURCES_LIST_ITEMS = [
-            {
-                id: 1, title: "Dataset: HK Urban Point Cloud",
-                desc: "A large-scale point cloud dataset for Hong Kong urban areas, suitable for semantic segmentation tasks. Available for academic use.",
-                img: "https://via.placeholder.com/380x253/555/fff?text=Dataset", date: "v1.0 Release"
-            },
-            {
-                id: 2, title: "Tool: CityGML Parser",
-                desc: "An open-source Python tool for parsing and processing CityGML files efficiently. Supports LoD2 and LoD3 models.",
-                img: "https://via.placeholder.com/380x253/666/fff?text=Tool", date: "v2.3"
-            },
-            {
-                id: 3, title: "Model: Urban Traffic Prediction",
-                desc: "Pre-trained weights for our GNN-based traffic prediction model, trained on 5 years of Shenzhen traffic data.",
-                img: "https://via.placeholder.com/380x253/777/fff?text=Model", date: "v1.1"
-            }
-        ];
-
+        const RESOURCES_LIST_ITEMS = [
+            {
+                id: 1, title: "Dataset: HK Urban Point Cloud",
+                desc: "A large-scale point cloud dataset for Hong Kong urban areas, suitable for semantic segmentation tasks. Available for academic use.",
+                img: "https://via.placeholder.com/380x253/555/fff?text=Dataset", date: "v1.0 Release",
+                articleId: 'res-point-cloud' // NEW LINK
+            },
+            {
+                id: 2, title: "Tool: CityGML Parser",
+                desc: "An open-source Python tool for parsing and processing CityGML files efficiently. Supports LoD2 and LoD3 models.",
+                img: "https://via.placeholder.com/380x253/666/fff?text=Tool", date: "v2.3"
+            },
+            {
+                id: 3, title: "Model: Urban Traffic Prediction",
+                desc: "Pre-trained weights for our GNN-based traffic prediction model, trained on 5 years of Shenzhen traffic data.",
+                img: "https://via.placeholder.com/380x253/777/fff?text=Model", date: "v1.1"
+            }
+        ];
         
 
         // ==========================================
@@ -480,9 +546,9 @@
                        <div className="aspect-square w-full bg-gray-200 overflow-hidden rounded-none">
                          <img src={item.img} alt={item.title} className="w-full h-full object-cover hover-zoom-img" />
                        </div>
-                       <h3 className="font-bold text-xl sm:text-[24px] 3xl:text-[32px] leading-tight group-hover:text-blue-600">{item.title}</h3>
-                       <p className="text-sm text-gray-600">{item.desc}</p>
-                       <p className="text-xs text-gray-400 mt-auto pt-2">{item.meta}</p>
+                       <h3 className="px-2 font-bold text-xl sm:text-2xl 3xl:text-2xl leading-tight group-hover:text-blue-600">{item.title}</h3>
+                       <p className="px-2 text-sm text-gray-600">{item.desc}</p>
+                       <p className="px-2 text-xs text-gray-400 mt-auto pt-2">{item.meta}</p>
                      </div>
                    ))}
                 </div>
@@ -594,6 +660,12 @@
                                 <h2 className="text-3xl md:text-4xl font-bold mb-1">{TEAM_DATA.pi.name}</h2>
                                 <p className="text-lg md:text-xl text-gray-500 mb-6">{TEAM_DATA.pi.role}</p>
                                 <p className="text-sm md:text-base text-gray-700 leading-relaxed text-justify">{TEAM_DATA.pi.bio}</p>
+                                <h3 className="text-2xl md:text-2xl font-bold mb-1 pt-6">Education</h3>
+                                <p className="text-sm md:text-base text-gray-700 leading-relaxed text-justify">{TEAM_DATA.pi.edu}</p>
+                                <h3 className="text-2xl md:text-2xl font-bold mb-1 pt-6">Awards</h3>
+                                <p className="text-sm md:text-base text-gray-700 leading-relaxed text-justify">{TEAM_DATA.pi.Awards}</p>
+                                <h3 className="text-2xl md:text-2xl font-bold mb-1 pt-6">Research Interests</h3>
+                                <p className="text-sm md:text-base text-gray-700 leading-relaxed text-justify">{TEAM_DATA.pi.ri}</p>
                             </div>
                         </div>
 
