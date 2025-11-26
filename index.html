@@ -99,23 +99,55 @@
             'ulsr-gs': {
                 title: "科研成果 | ULSR-GS：基于 Gaussian Splatting 的城市级大尺度表面重建",
                 subtitle: "高效可扩展的城市级曲面重建方案",
+                date: "November 4, 2025",
+                author: "Xiaozhuo Li, Wufan Zhao et al.",
+                img: "images/news/ULSR/640.png",
+                abstract: "本研究提出的ULSR-GS架构通过点到影像分区和多视几何一致性约束，实现了高效可扩展的城市级曲面重建，为大规模数字孪生与三维城市建模提供了一种通用且高精度的解决方案。",
+                body: [
+                    "在数字孪生与城市级三维重建中，传统 MVS在网格提取在上千张高分辨率倾斜影像下易陷入“算力与内存双高”的瓶颈；近年的Gaussian Splatting[1]提供了更高效的渲染与几何重建路径，但向城市尺度扩展仍受分区与图像选取、单视角主导的稠密化、缺乏跨视几何一致性所限。",
+                    "课题组最新提出的ULSR-GS[2]在此前的MVG-Splatting[3]工作基础上，提出 “点到图像（point-to-photo）分区 + 多视角引导稠密化 + 跨视深度/法向一致性约束”：为每个子区仅分配最相关影像，子区内以多视深度聚合与一致性损失进行稠密化优化，支持跨GPU并行训练并实现子区独立网格提取与无缝拼接；在多套城市级航测数据上，对现有GS方法取得稳定优势，并在总体耗时上显著优于传统基于MVS的方案。相关成果如下：",
+                    "ULSR-GS: : Urban large-scale surface reconstruction Gaussian splatting with multi-view geometric consistency. ISPRS Journal of Photogrammetry and Remote Sensing, 230 (2025): 861-880. https://doi.org/10.1016/j.isprsjprs.2025.10.008 ",
+                    "项目主页： https://ulsrgs.github.io/",
+                    "MVG-Splatting: Multi-view guided Gaussian splatting with adaptive quantile-based geometric consistency densification. Information Fusion, (2025):103540. https://doi.org/10.1016/j.inffus.2025.103540.",
+
+                ],
+            },
+            'laser-conf': {
+                title: "新闻动态 | AI4City课题组参加第九届全国激光雷达大会",
+                subtitle: "课题组成员赵吴凡教授、戴劭勍博士、张帅、史哲成共4人参会，分别做专题报告和参加点云比赛。",
                 date: "November 10, 2025",
                 author: "Xiaozhuo Li, Wufan Zhao et al.",
-                img: "https://via.placeholder.com/1000x600/808080/ffffff?text=ULSR-GS+Architecture",
+                img: "images/news/laserconf/640.png",
                 abstract: "本研究提出的ULSR-GS架构通过点到影像分区和多视几何一致性约束，实现了高效可扩展的城市级曲面重建。",
                 body: [
                     "该成果为大规模数字孪生与三维城市建模提供了一种通用且高精度的解决方案。",
                     "通过引入高斯溅射技术，大幅提升渲染速度的同时保留了高频细节。"
                 ],
-            }
+            },
         };
 
         // --- 首页数据 ---
         // 新闻 (6个格子)
         const NEWS_ITEMS = [
-            { id: 103, title: ARTICLE_CONTENT['alex-visit'].title, desc: ARTICLE_CONTENT['alex-visit'].subtitle, meta: ARTICLE_CONTENT['alex-visit'].date, img: "images/news/Alex Levering/640.jfif", articleId: 'alex-visit' },
-            { id: 102, title: ARTICLE_CONTENT['ulsr-gs'].title, desc: ARTICLE_CONTENT['ulsr-gs'].subtitle, meta: ARTICLE_CONTENT['ulsr-gs'].date, img: "https://via.placeholder.com/300/e9c46a/333?text=News+2", articleId: 'ulsr-gs' },
-            { id: 101, title: "UGOD Summer AI Symposium", desc: "Join us at the UGOD Summer AI Symposium.", meta: "July 9 2025 | HKUST(GZ)", img: "https://via.placeholder.com/300/264653/fff?text=Symposium" },
+            { id: 103, 
+              title: ARTICLE_CONTENT['alex-visit'].title, 
+              desc: ARTICLE_CONTENT['alex-visit'].subtitle, 
+              meta: ARTICLE_CONTENT['alex-visit'].date, 
+              img: ARTICLE_CONTENT['alex-visit'].img, 
+              articleId: 'alex-visit' },
+
+            { id: 102, 
+              title: ARTICLE_CONTENT['ulsr-gs'].title, 
+              desc: ARTICLE_CONTENT['ulsr-gs'].subtitle, 
+              meta: ARTICLE_CONTENT['ulsr-gs'].date, 
+              img: ARTICLE_CONTENT['ulsr-gs'].img, 
+              articleId: 'ulsr-gs' },
+
+            { id: 101, title: ARTICLE_CONTENT['laser-conf'].title, 
+              desc: ARTICLE_CONTENT['laser-conf'].subtitle, 
+              meta: ARTICLE_CONTENT['laser-conf'].date, 
+              img: ARTICLE_CONTENT['laser-conf'].img, 
+              articleId: 'laser-conf'},
         ];
 
         // 首页展示的资源 (6个格子)
@@ -573,39 +605,58 @@
 
         // 4. 新闻，数据，研究，出版等的post的详情页样式
         const ArticlePage = ({ articleId }) => {
-            const content = ARTICLE_CONTENT[articleId] || ARTICLE_CONTENT['seminar'];
+          const content = ARTICLE_CONTENT[articleId] || ARTICLE_CONTENT['seminar'];
 
-            return (
-                <div className="pt-[81px] w-full min-h-screen">
-                    <div className="max-w-4xl mx-auto px-6 py-16 md:py-20 flex flex-col items-center">
-                        <h1 className="text-3xl md:text-5xl font-bold text-center mb-6 leading-tight">{content.title}</h1>
-                        <div className="text-gray-500 mb-12 text-sm md:text-base">{content.date} • By {content.author}</div>
-                        
-                        <div className="w-full aspect-video bg-gray-100 shadow-sm mb-16 rounded-2xl overflow-hidden">
-                            <img src={content.img} className="w-full h-full object-cover" alt={content.title} />
-                        </div>
+          return (
+              <div className="pt-[81px] w-full min-h-screen">
+                  <div className="max-w-4xl mx-auto px-6 py-16 md:py-20 flex flex-col items-center">
+                      <h1 className="text-3xl md:text-5xl font-bold text-center mb-6 leading-tight">{content.title}</h1>
+                      <div className="text-gray-500 mb-12 text-sm md:text-base">{content.date} • By {content.author}</div>
+                      
+                      <div className="w-full aspect-video bg-gray-100 shadow-sm mb-16 rounded-2xl overflow-hidden">
+                          <img src={content.img} className="w-full h-full object-cover" alt={content.title} />
+                      </div>
 
-                        <div className="w-full">
+                      <div className="w-full">
 
-                           c
-                            
-                            {content.details && content.details.length > 0 && (
-                                <div className="mt-12 p-6 bg-blue-50 border border-blue-100 rounded-xl">
-                                    <h3 className="font-bold text-blue-900 mb-4 text-xl"></h3>
-                                    <ul className="space-y-3 text-blue-800">
-                                        {content.details.map((detail, index) => (
+                          {content.body && content.body.length > 0 && (
+                              <div className="space-y-8 text-lg text-gray-800 leading-relaxed text-justify mb-12">
+                                  {content.body.map((item, index) => {
+                                      if (typeof item === 'string') {
+                                          // 如果是文本字符串，直接渲染为 <p> 标签
+                                          return <p key={index}>{item}</p>;
+                                      } else if (item.type === 'image') {
+                                          // 如果是图像，渲染为 <img> 标签
+                                          return (
+                                              <div key={index} className="my-8 flex flex-col items-center">
+                                                  <img src={item.src} alt={item.caption} className="w-full shadow-sm mb-2 rounded-xl" />
+                                                  {item.caption && <span className="text-sm text-gray-500 italic">{item.caption}</span>}
+                                              </div>
+                                          );
+                                      }
+                                      return null; // 如果没有匹配的类型，返回 null
+                                  })}
+                              </div>
+                          )}
+                          
+                          {content.details && content.details.length > 0 && (
+                              <div className="mt-12 p-6 bg-blue-50 border border-blue-100 rounded-xl">
+                                  <h3 className="font-bold text-blue-900 mb-4 text-xl">Event Information</h3>
+                                  <ul className="space-y-3 text-blue-800">
+                                      {content.details.map((detail, index) => (
                                           <li key={index} className="flex gap-3 items-start">
                                               <span>{detail.text}</span>  {/* 只渲染文本 */}
                                           </li>
                                       ))}
-                                    </ul>
-                                </div>
-                            )}
-                        </div>
-                    </div>
-                </div>
-            );
+                                  </ul>
+                              </div>
+                          )}
+                      </div>
+                  </div>
+              </div>
+          );
         };
+
 
         // ==========================================
         // 5. 主程序 (App)
