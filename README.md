@@ -1,81 +1,11 @@
-# Team Members Information
+# Ai4City 新网站
 
-This document contains detailed information about the members of the AI4DCity Lab. The team consists of Principal Investigators (PI), PhD students, Master's students, Research Assistants (RA), Visiting Students (VST), Visiting Scholars (VSC), and Alumni (ALU). Below is a breakdown of each category with relevant details.
 
-## Table of Contents
-1. [Principal Investigator (PI)](#principal-investigator-pi)
-2. [PhD Students](#phd-students)
-3. [Master's Students](#masters-students)
-4. [Research Assistants (RA)](#research-assistants-ra)
-5. [Visiting Students (VST)](#visiting-students-vst)
-6. [Visiting Scholars (VSC)](#visiting-scholars-vsc)
-7. [Alumni (ALU)](#alumni-alu)
 
----
+## v0.9 Nov 27 2025
+做出了全功能的demo
+1.新闻页面能自动生成，点击首页卡片的时候可以跳转详情，全功能走通了。但是前期架构的时候欠考虑，排版操作特别麻烦，后面可以嵌一个markdown进去
+2.研究，出版物，资源等现在的设想是直接跳转到外部网页（比如公众号，doi），就不自己生成了（干脆新闻页面也这样做得了）。Research那块的逻辑是走得通的，从首页进来能一步步跳到相应的公众号文章；资源和出版物的还没放
+3.人员那一块基本做完了;PI卡片左侧排版有些问题，还正在解决；学生卡片里面，有个人网页的人员是支持点击跳转的。
+4.整体版面对1920*1080分辨率以上的屏幕显示效果*特别丑*（过宽），需要调整适应逻辑。
 
-## Principal Investigator (PI)
-
-- **Name**: Wufan Zhao
-- **Role**: Principal Investigator
-- **Email**: [wufanzhao@hkust-gz.edu.cn](mailto:wufanzhao@hkust-gz.edu.cn)
-- **Homepage**: [HKUST(GZ) Location](https://www.openstreetmap.org/?#map=17/22.891298/113.476131&layers=N)
-- **Photo**: ![Wufan Zhao](images/people/wufan.jpg)
-
-### Bio
-Dr. Wufan Zhao is an Assistant Professor at the Urban Governance and Design (UGOD) Thrust, The Hong Kong University of Science and Technology (Guangzhou). He is the Principal Investigator (PI) of AI4DCity Lab.
-
-His research primarily focuses on AI-based remote sensing image understanding, 3D city modeling, multi-modal spatiotemporal data fusion, and their methodological and applied studies. His research addresses challenges related to urban environments and socio-economic factors under various scales of Sustainable Development Goals (SDGs).
-
----
-
-## PhD Students
-
-1. **Tongyan Hua**
-   - **Role**: 3D City Reconstruction, NeRF, and SLAM
-   - **Email**: [thua919@github.io](mailto:thua919@github.io)
-   - **Homepage**: [Tongyan's Website](https://thua919.github.io/)
-   - **Photo**: ![Tongyan Hua](https://via.placeholder.com/200/ddd/333?text=TH)
-
-2. **Shuai Zhang**
-   - **Role**: Point Cloud Processing and Foundation Model
-   - **Email**: [sz@researchgate.net](mailto:sz@researchgate.net)
-   - **Homepage**: [Shuai's ResearchGate](https://www.researchgate.net/profile/Shuai-Zhang-194/research)
-   - **Photo**: ![Shuai Zhang](https://via.placeholder.com/200/ddd/333?text=SZ)
-
-(Continue with other PhD students...)
-
----
-
-## Master's Students (MST)
-
-(Continue similarly with Master’s students…)
-
----
-
-## Research Assistants (RA)
-
-(Continue similarly with Research Assistants…)
-
----
-
-## Visiting Students (VST)
-
-(Continue similarly with Visiting Students…)
-
----
-
-## Visiting Scholars (VSC)
-
-(Continue similarly with Visiting Scholars…)
-
----
-
-## Alumni (ALU)
-
-(Continue similarly with Alumni...)
-
----
-
-### Notes
-- All information is subject to change as team members update their research and profiles.
-- Please contact members directly via email or visit their provided homepages for further details.
