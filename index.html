@@ -68,7 +68,7 @@
                 subtitle: "Garbage In, Gospel Out?",
                 date: "January 1, 2025",
                 author: "Dr. Alex Levering",
-                img: "https://via.placeholder.com/1000x600/f4f4f4/333?text=Seminar+Poster",
+                img: "images/seminar/640 (5).png",
                 abstract: "While the quality and availability of predictive modelling methods for urban analyses continue to improve rapidly, our collective understanding of their underlying data remains poor.",
                 body: [
                     "This lack of insight hampers the practical implementation of methods and reduces our ability to extract knowledge from urban research efforts.",
@@ -281,33 +281,18 @@
         // 首页展示的资源 (6个格子)
         const HOME_RESOURCES_ITEMS = [
             { 
-                id: 'r1', 
-                title: "Point Cloud & Model", 
-                img: "images/resource/point-cloud.jpg" 
-            },
-            { 
                 id: 'r2', 
-                title: "Remote Sensing", 
+                title: "Dataset", 
                 img: "images/resource/remote-sensing.png" 
             },
             { 
                 id: 'r3', 
-                title: "Project File", 
+                title: "Open Package", 
                 img: "images/resource/file.jpg" 
             },
             { 
-                id: 'r4', 
-                title: "Computility", 
-                img: "images/resource/composability.jpg" 
-            },
-            { 
-                id: 'r5', 
-                title: "Hardware", 
-                img: "images/resource/hardware.png" 
-            },
-            { 
                 id: 'r6', 
-                title: "Software", 
+                title: "Code(Github)", 
                 img: "images/resource/software.png" 
             },
         ];
@@ -319,23 +304,25 @@
             name: "Wufan Zhao",
             role: "Principal Investigator",
             bio: "Dr. Wufan Zhao is currently an Assistant Professor at the Urban Governance and Design (UGOD) Thrust, The Hong Kong University of Science and Technology (Guangzhou). He is the Principal Investigator (PI) of AI4DCity Lab. Before joining HKUST(GZ), he was a Research Fellow at Geomatics Group, KU Leuven. His research primarily focuses on AI-based remote sensing image understanding, 3D city modeling, multi-modal spatiotemporal data fusion, and their methodological and applied studies. His researches will specifically addresses challenges related to urban environments and socio-economic factors under various scales of Sustainable Development Goals (SDGs).",
-            edu: ["PhD in Remote sensing and Earth Observation, ITC, University of Twente (2022)", 
-                  "MSc in Geoinformatics, Nanjing Normal University & University of Salzrburg (2018)",
-                  "BSc in GIS, Northwest A&F University (2015)"],
-            Awards: ["Top 30 reviewers of the ISPRS Journal of Photogrammetry and Remote Sensing for 2023","UTwente ITC Ph.D. Publication Award, 2022", "CSC Scholarship, 2018-2022",],
-            ri: ["AI based remote sensing data processing and 3D modeling", "Spatio-temporal data science and digital twin cities","Urban complex systems and uncertainty",],
+            //edu: ["PhD in Remote sensing and Earth Observation, ITC, University of Twente (2022)", 
+                  //"MSc in Geoinformatics, Nanjing Normal University & University of Salzrburg (2018)",
+                  //"BSc in GIS, Northwest A&F University (2015)"],
+            //Awards: ["Top 30 reviewers of the ISPRS Journal of Photogrammetry and Remote Sensing for 2023","UTwente ITC Ph.D. Publication Award, 2022", "CSC Scholarship, 2018-2022",],
+            //ri: ["AI based remote sensing data processing and 3D modeling", "Spatio-temporal data science and digital twin cities","Urban complex systems and uncertainty",],*/}
             img: "images/people/wufan.jpg"
           },
 
-          //phd卡片数据
-          phd: [
-              {
+          //postphd,phd卡片数据
+          postphd:[{
                 name: "Zhuoxiao Li",
                 role: "(Postdoc Researcher)3D Reconstruction, Gaussian Splatting",
                 email: "Zhuoxiao.Li@liverpool.ac.uk",
                 homepage: "#",
                 img: "images/people/Lizhuoxiao.png"
-              },
+              },],
+
+          phd: [
+              
               {
                 name: "Tongyan Hua",
                 role: "3D city reconstruction, NeRF and SLAM",
@@ -365,23 +352,30 @@
                 img: "images/people/zouliwei.png"
               },
               {
-                name: "Liang Zeng",
-                role: "Self-supervised learning, computer vision, multi-modal remote sensing processing",
-                email: "liang.zeng@kuleuven.be",
-                homepage: "https://iiw.kuleuven.be/onderzoek/geomatics/people/00159796",
-                img: "images/people/Zengliang.png"
-              },
-              {
-                name: "Suzanna Cuypers",
-                role: "Deep leanrning for remote sensing image analysis, land use classification",
-                email: "",
-                homepage: "https://iiw.kuleuven.be/onderzoek/geomatics/people/00130472",
+                name: "Dongli Wu",
+                role: "#",
+                email: "#",
+                homepage: "#",
                 img: "images/people/profile.png"
-              }
+              },
+              // {
+              //   name: "Liang Zeng",
+              //   role: "Self-supervised learning, computer vision, multi-modal remote sensing processing",
+              //   email: "liang.zeng@kuleuven.be",
+              //   homepage: "https://iiw.kuleuven.be/onderzoek/geomatics/people/00159796",
+              //   img: "images/people/Zengliang.png"
+              // },
+              // {
+              //   name: "Suzanna Cuypers",
+              //   role: "Deep leanrning for remote sensing image analysis, land use classification",
+              //   email: "",
+              //   homepage: "https://iiw.kuleuven.be/onderzoek/geomatics/people/00130472",
+              //   img: "images/people/profile.png"
+              // }
             ],
 
-            // Master Students
-            mst: [
+          // Master Students
+          mst: [
               {
                 name: "Junxing Luo",
                 role: "Built environment and infrastructure assessment, human mobility analysis",
@@ -410,24 +404,24 @@
                 homepage: "#",
                 img: "images/people/xiaoyusen.png"
               },
-              {
-                name: "Feiya Shu",
-                role: "3D Point Clouds, Multimodal Remote Sensing",
-                email: "",
-                homepage: "#",
-                img: "images/people/profile.png"
-              },
-              {
-                name: "Chenyuan Zhu",
-                role: "Remote sensing image analysis and 3D modeling",
-                email: "15934896599@163.com",
-                homepage: "#",
-                img: "images/people/profile.png"
-              }
+              // {
+              //   name: "Feiya Shu",
+              //   role: "3D Point Clouds, Multimodal Remote Sensing",
+              //   email: "",
+              //   homepage: "#",
+              //   img: "images/people/profile.png"
+              // },
+              // {
+              //   name: "Chenyuan Zhu",
+              //   role: "Remote sensing image analysis and 3D modeling",
+              //   email: "15934896599@163.com",
+              //   homepage: "#",
+              //   img: "images/people/profile.png"
+              // }
             ],
 
-            // Research Assistants
-            ra: [
+          // Research Assistants
+          ra: [
               {
                 name: "Zongrong Li",
                 role: "GeoAI, CityLLM",
@@ -493,8 +487,8 @@
               }
             ],
 
-            // Visiting Students
-            vst: [
+          // Visiting Students
+          vst: [
               {
                 name: "Xiaoyu Li",
                 role: "UAV remote sensing, environmental monitoring and LULC classification",
@@ -561,7 +555,7 @@
             alu: [
               {
                 name: "Ke Xu",
-                role: "3D Scene Generation & Computer vision",
+                role: "phd at hkust",
                 email: "kexu0501@gmail.com",
                 homepage: "#",
                 img: "images/people/xuke.png"
@@ -880,7 +874,6 @@
         };
 
         // 1. 主页 (Home Page)
-        // 这里是最顶端的大图hero页
         
         const HomePage = ({ setPage, aboutRef }) => (
           <div className="w-full">
@@ -913,6 +906,31 @@
             </div>
 
             <div className="max-w-[1920px] mx-auto px-0 py-12 md:py-16 space-y-64"> {/* 这一级是hero大图下面所有子模块的父容器 */}
+              {/* 主页的关于我们页 */}
+              <FadeInSection>
+                  <div id="about-section" ref={aboutRef} className="pt-12">
+                      <div className="max-w-4xl mx-auto text-center mb-8 px-0">
+                          <h2 className="text-4xl sm:text-5xl font-bold mb-6">About Us</h2>
+                          <h3 className="text-2xl font-semibold mb-4">AI 4D City(AI4CITY) Lab</h3>
+                          <div>
+                          <a href="mailto:wufanzhao@hkust-gz.edu.cn" target="_blank" class="text-blue-500 underline">wufanzhao@hkust-gz.edu.cn</a>
+                            <br/>
+                          <a href="https://www.openstreetmap.org/?#map=17/22.891298/113.476131&layers=N" target="_blank" class="text-blue-500 underline">HKUST(GZ)E1 L4 408</a>
+                          </div>
+                          <p className="text-lg text-gray-600 leading-relaxed text-justify">
+                              4D refers to 3D space plus time series modeling. As the type and density of the remote sensing data continue to grow exponentially, Dr. Wufan Zhao and his AI4City Lab aim to help pioneer computationally efficient AI-based processing and modeling strategies to solve complex and practical urban problems by integrating the multi-dimensional/modal characteristics of big earth observation data.<br/>
+                              <br/>
+                              Long-term openings for RA and PhD positions in the Lab. Applications are welcome, students with a master’s degree background are preferred. PhD students will be admitted in January and September each year. Please refer to the official guidelines for more details.<br/>
+                              <br/>
+                              Undergraduate students are encouraged to apply for the <a href="https://www.hkust-gz.edu.cn/academics/education-innovation/red-bird-mphil-program/" target="_blank" class="text-blue-500 underline">RedBird MPhil of HKUST-gz</a>. Postdoc positions are open. Very competitive salary and research fund package. Welcome to drop your resume and research proposal.<br/>
+                          </p>
+                      </div>
+                      {/* 修复: 图片容器宽度与文字一致 max-w-4xl，居中，直角 */}
+                      <div className="w-full h-full max-w-4xl mx-auto aspect-auto bg-gray-100 overflow-hidden shadow-sm mb-12 rounded-none">
+                          <img src="images/frontPage/research-field.jpg" className="w-full h-full object-cover" alt="Research Diagram" />
+                      </div>
+                  </div>
+              </FadeInSection>
 
               {/* 这是News的容器 */}
               <FadeInSection className="flex flex-col md:flex-row gap-8 lg:gap-12">
@@ -963,7 +981,7 @@
                  ))}
               </FadeInSection>
 
-              {/* 主页的人员页样式 */}
+              {/* 主页的团队合影样式 */}
               <FadeInSection>
                 {/* 移除 gap, 背景透明/白色, 直角 */}
                 <div className="flex flex-col md:flex-row gap-0 h-auto overflow-hidden rounded-none">
@@ -1019,32 +1037,7 @@
                 </div>
               </FadeInSection>
 
-              {/* 主页的关于我们页 */}
-              <FadeInSection>
-                  <div id="about-section" ref={aboutRef} className="pt-12">
-                      <div className="max-w-4xl mx-auto text-center mb-8 px-0">
-                          <h2 className="text-4xl sm:text-5xl font-bold mb-6">About Us</h2>
-                          <h3 className="text-2xl font-semibold mb-4">AI 4D City(AI4CITY) Lab</h3>
-                          <div>
-                          <a href="mailto:wufanzhao@hkust-gz.edu.cn" target="_blank" class="text-blue-500 underline">wufanzhao@hkust-gz.edu.cn</a>
-                            <br/>
-                          <a href="https://www.openstreetmap.org/?#map=17/22.891298/113.476131&layers=N" target="_blank" class="text-blue-500 underline">HKUST(GZ)E1 L4 408</a>
-                          </div>
-                          <p className="text-lg text-gray-600 leading-relaxed text-justify">
-                              4D refers to 3D space plus time series modeling. As the type and density of the remote sensing data continue to grow exponentially, Dr. Wufan Zhao and his AI4City Lab aim to help pioneer computationally efficient AI-based processing and modeling strategies to solve complex and practical urban problems by integrating the multi-dimensional/modal characteristics of big earth observation data.<br/>
-                              <br/>
-                              Long-term openings for RA and PhD positions in the Lab. Applications are welcome, students with a master’s degree background are preferred. PhD students will be admitted in January and September each year. Please refer to the official guidelines for more details.<br/>
-                              <br/>
-                              Undergraduate students are encouraged to apply for the <a href="https://www.hkust-gz.edu.cn/academics/education-innovation/red-bird-mphil-program/" target="_blank" class="text-blue-500 underline">RedBird MPhil of HKUST-gz</a>. Postdoc positions are open. Very competitive salary and research fund package. Welcome to drop your resume and research proposal.<br/>
-                          </p>
-                      </div>
-                      {/* 修复: 图片容器宽度与文字一致 max-w-4xl，居中，直角 */}
-                      <div className="w-full h-full max-w-4xl mx-auto aspect-auto bg-gray-100 overflow-hidden shadow-sm mb-12 rounded-none">
-                          <img src="images/frontPage/research-field.jpg" className="w-full h-full object-cover" alt="Research Diagram" />
-                      </div>
-                  </div>
-              </FadeInSection>
-
+ 
             </div>
           </div>
         );
@@ -1098,11 +1091,13 @@
                                     </div>
                                 </div>
                             </div>
+                            {/* 右侧：文字与经历 */}
                             <div className="flex-1 w-2/3">
                                 <h2 className="text-3xl md:text-4xl font-bold mb-1">{TEAM_DATA.pi.name}</h2>
                                 <p className="text-lg md:text-xl text-gray-500 mb-6">{TEAM_DATA.pi.role}</p>
                                 <p className="text-lg md:text-lg text-gray-700 leading-relaxed text-justify">{TEAM_DATA.pi.bio}</p>
-                                <h3 className="text-2xl md:text-2xl font-bold mb-1 pt-6">Education</h3>
+                                {/*这里注释掉的是原版的pi个人教育经历等版式*/}
+                                {/*<h3 className="text-2xl md:text-2xl font-bold mb-1 pt-6">Education</h3>
                                 <ul className="list-disc pl-6 space-y-1">
                                   {TEAM_DATA.pi.edu.map((item, index) => (
                                     <li key={index} className="text-lg rounded-lg font-bold text-gray-700">{item}</li>
@@ -1119,12 +1114,31 @@
                                   {TEAM_DATA.pi.ri.map((item, index) => (
                                     <li key={index} className="text-lg rounded-lg font-bold text-gray-700">{item}</li>
                                   ))}
-                                </ul>
+                                </ul>*/}
                             </div>
                         </div>
                         {/* 人员卡片样式 */}
-                        <div className="mb-16">{/* 博士与博后卡片) */}
-                            <h2 className="text-2xl md:text-3xl font-bold mb-8 pl-2 border-l-4 border-black">Postdoc Researcher & Ph.D. Students</h2>
+                        <div className="mb-16">{/* 博士后卡片) */}
+                            <h2 className="text-2xl md:text-3xl font-bold mb-8 pl-2 border-l-4 border-black">Postdoc Researcher</h2>
+                            {/* 修复：恢复卡片设计 (White box, border, padding, shadow, rounded-xl) */}
+                            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+                                {/* 注意此处，TEAM_DATA.postphd.map;DATA和map中间那个是卡片的索引 */}
+                                {TEAM_DATA.postphd.map((member, idx) => (
+                                    <FadeInSection key={idx} className="bg-white border border-gray-200 rounded-2xl p-6 flex flex-col items-center text-center hover:shadow-xl transition duration-300 transform hover:-translate-y-1">
+                                        <img src={member.img} alt={member.name} className="w-32 h-32 rounded-full object-cover mb-4 bg-gray-100" />
+                                        {/* 姓名作为链接接口 */}
+                                        <a href={member.homepage} className="font-bold text-lg mb-1 hover:text-blue-600 transition" target="_blank">
+                                            {member.name}
+                                        </a>
+                                        <p className="text-xs font-medium text-gray-500 uppercase tracking-wide mb-3 min-h-[32px]">{member.role}</p>
+                                        <a href={`mailto:${member.email}`} className="text-xs text-blue-500 flex items-center gap-1 hover:underline"><Mail size={12}/> {member.email}</a>
+                                    </FadeInSection>
+                              
+                                ))}
+                            </div>
+                        </div>
+                        <div className="mb-16">{/* 博士卡片) */}
+                            <h2 className="text-2xl md:text-3xl font-bold mb-8 pl-2 border-l-4 border-black">Ph.D. Students</h2>
                             {/* 修复：恢复卡片设计 (White box, border, padding, shadow, rounded-xl) */}
                             <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
                                 {TEAM_DATA.phd.map((member, idx) => (
@@ -1288,7 +1302,7 @@
         // 独立页面(研究)包装器
         const ResearchPage = () => (
             <ListPage 
-                title="Research Projects" 
+                title="Research" 
                 description="Our latest findings and publications in AI & Urban Science."
                 items={RESEARCH_PROJECTS} 
             />
