@@ -202,64 +202,7 @@
                 ],
                
             },
-            // --- NEW: Research Detail Pages ---
-           'research-3d-visual': {
-                title: "研究项目 | 3D visual understanding and reconstruction (项目详情)",
-                subtitle: "基于人工智能的城市三维感知与重建",
-                date: "Updated Nov 17 2025",
-                author: "AI4City Research Team",
-                img: "images/research/ScreenShot_2025-11-27_014217_401.png",
-                abstract: "该项目侧重于使用先进的深度学习模型，从多源数据中实现城市环境的精确三维重建和语义理解。",
-                body: [
-                    "当前工作涉及开发新颖的神经渲染技术，以实现城市规模的高保真三维模型。我们的方法集成了最先进的视觉 Transformer 和多视图几何约束，以确保视觉质量和几何精度的统一。未来的研究将集中于整合动态时间信息，以实现 4D 时空建模。",
-                    "主要技术挑战包括如何处理大规模、不规则的城市数据，以及如何在保持计算效率的同时，提升重建模型的语义丰富性。",
-                    { type: 'image', src: 'https://via.placeholder.com/800x400/4CAF50/FFFFFF?text=3D+Reconstruction+Visual+Example', caption: '项目三维重建效果图' },
-                    "欢迎对 3D 视觉和城市计算感兴趣的同学加入本研究项目！"
-                ]
-            },
-            'research-multimodal': {
-                title: "研究项目 | Multimodal Spatiotemporal Data Mining and Interaction (项目详情)",
-                subtitle: "多模态时空数据挖掘与交互",
-                date: "Updated Oct 10 2025",
-                author: "AI4City Research Team",
-                img: "images/research/ScreenShot_2025-11-27_014246_087.png",
-                abstract: "利用多源时空数据（遥感、街景、社交媒体等）进行城市动态分析和预测建模。",
-                body: [
-                    "该项目致力于融合遥感影像、LiDAR 点云、社交媒体数据等多模态信息流，以捕捉复杂的城市现象。我们正在构建基于图神经网络（GNN）的模型，用于预测交通流量、犯罪热点和基础设施故障。",
-                    "其中一个子项目是基于LLM（大语言模型）的小商业选址应用构建，旨在结合宏观地理数据和微观街景/POI数据，为创业者提供客观的选址评估和经营模式调整建议。",
-                ]
-            },
-            // --- NEW: Publication Detail Pages ---
-            'pub-urban-resilience': {
-                title: "论文 | AI for Urban Resilience (详细摘要)",
-                subtitle: "发表于 Nature Cities",
-                date: "2025",
-                author: "Zhao et al.",
-                img: "https://via.placeholder.com/1000x600/333/fff?text=Paper+Cover",
-                abstract: "本文讨论了人工智能在城市韧性规划和灾害响应机制中的影响，并提出了一个基于多智能体系统（Multi-Agent System）的城市韧性评估框架。",
-                body: [
-                    "城市韧性（Urban Resilience）是应对气候变化和突发事件的关键。本研究利用卫星遥感和IoT数据，通过深度学习模型实时监测城市基础设施的健康状况，并在灾害发生前提供预警。",
-                    "我们的研究结果表明，基于AI的早期预警系统可以将灾害造成的损失减少20%以上。",
-                    "全文链接：[PDF Link Placeholder] | DOI: 10.1038/s43248-025-00000-x"
-                ]
-            },
-            // --- NEW: Resource Detail Pages ---
-            'res-point-cloud': {
-                title: "资源 | Dataset: HK Urban Point Cloud (详情)",
-                subtitle: "香港城市点云数据集 v1.0",
-                date: "v1.0 Release",
-                author: "AI4City Lab",
-                img: "https://via.placeholder.com/1000x600/555/fff?text=Dataset+Preview",
-                abstract: "这是一个大规模的点云数据集，涵盖了香港主要城市区域，适用于语义分割和三维重建任务。",
-                body: [
-                    "数据集包含超过 10 亿个点，通过机载和车载 LiDAR 采集。数据已进行预处理，并提供了 15 个主要城市类别的语义标签。",
-                    "数据格式: LAS/PLY",
-                    "数据大小: 约 500 GB (压缩后)",
-                    "使用条款: 仅限学术研究用途。",
-                    "下载链接: [Download Link Placeholder]",
-                    "相关文献: [Citation Link Placeholder]"
-                ]
-            },
+
           };
         // --- 首页数据 ---
         // 新闻 (6个格子)
@@ -339,9 +282,7 @@
           pi: {
             name: "Wufan Zhao",
             role: "Principal Investigator",
-            bio: `Wufan ZHAO is an Assistant Professor (tenure-track) and PhD supervisor at HKUST(Guangzhou). He obtained his PhD in 2022 from the Faculty of Geo-Information Science and Earth Observation (ITC), University of Twente, the Netherlands, and conducted post-doctoral research at KU Leuven, Belgium, in 2023. His research interests include AI-based intelligent interpretation of remote-sensing images, 3D urban modeling with particular attention to high-fidelity and generative techniques, and the fusion and analytics of multi-source spatiotemporal data. His work aims to support multi-scale analysis and decision-making for urban-environment and socio-economic challenges, ultimately contributing to the UN Sustainable Development Goals. 
-            
-            He is the principal investigator of several national and provincial projects funded by the NSFC China and other agencies, and has also received national postdoc and provincial young-talent grants. He was awarded the ITC Best PhD Publication Award, and has published more than twenty papers as first or corresponding author in leading international journals and conferences such as ISPRS Journal, JAG, IEEE TGRS, and ICCV.`,
+            bio: `Wufan ZHAO is an Assistant Professor (tenure-track) and PhD supervisor at HKUST(Guangzhou). He obtained his PhD in 2022 from the Faculty of Geo-Information Science and Earth Observation (ITC), University of Twente, the Netherlands, and conducted post-doctoral research at KU Leuven, Belgium, in 2023. His research interests include AI-based intelligent interpretation of remote-sensing images, 3D urban modeling with particular attention to high-fidelity and generative techniques, and the fusion and analytics of multi-source spatiotemporal data. His work aims to support multi-scale analysis and decision-making for urban-environment and socio-economic challenges, ultimately contributing to the UN Sustainable Development Goals.`,
 
             edu: ["Editorial Board Member of the Journal of Photogrammetric Engineering & Remote Sensing", 
                   "Executive Committee Member, ACM SIGSPATIAL China Chapter",
@@ -355,7 +296,7 @@
           //postphd,phd卡片数据
           postphd:[{
                 name: "Zhuoxiao Li",
-                role: "(Postdoc Researcher)3D Reconstruction, Gaussian Splatting",
+                role: "3D Reconstruction, Gaussian Splatting",
                 email: "Zhuoxiao.Li@liverpool.ac.uk",
                 homepage: "#",
                 img: "images/people/Lizhuoxiao.png"
@@ -389,12 +330,12 @@
                 role: "Multimodal data mining, Disaster analysis, Urban resilience",
                 email: "zou.liwei.levi@gmail.com",
                 homepage: "#",
-                img: "images/people/zouliwei.png"
+                img: "images/people/zouliwei.jpg"
               },
               {
                 name: "Dongli Wu",
-                role: "#",
-                email: "#",
+                role: "Generative 3D Modeling",
+                email: "annikeroseling@gmail.com",
                 homepage: "#",
                 img: "images/people/wudongli.jpg"
               },
@@ -444,6 +385,13 @@
                 homepage: "#",
                 img: "images/people/xiaoyusen.png"
               },
+              {
+                name: "Hongrui Xiao",
+                role: "",
+                email: "hxiao246@connect.hkust-gz.edu.cn",
+                homepage: "#",
+                img: ""
+              },
               // {
               //   name: "Feiya Shu",
               //   role: "3D Point Clouds, Multimodal Remote Sensing",
@@ -484,18 +432,18 @@
                 img: "images/people/shishuxian.jpg"
               },
               { name: "Danyang Zhang", 
-              role: "", 
-              email: "", 
+              role: "Computer vision; 3DGS; AI for City", 
+              email: "zdy@gatech.edu", 
               homepage: "#", 
               img: "images/people/zhangdanyang.png" },
               { name: "Hongye Hou", 
-              role: "", 
-              email: "", 
+              role: "3D vision, multi-model learning", 
+              email: "houhongye2001@stu.xjtu.edu.cn", 
               homepage: "#", 
               img: "images/people/houhongye.jpg" },
               { name: "Xuran Hu", 
-              role: "", 
-              email: "", 
+              role: "Intelligent interpretation of multimodal remote sensing data", 
+              email: "XuRanHu@stu.xidian.edu.cn", 
               homepage: "xuran-hu.github.io", 
               img: "images/people/huxuran.jpg" },
               {
@@ -503,18 +451,11 @@
                 role: "computer vision, point clouds, and 3D reconstruction",
                 email: "",
                 homepage: "#",
-                img: "images/people/profile.png"
+                img: "images/people/gonghaoran.jpg"
               },
               {
                 name: "Sihan Li",
                 role: "GIS, Information Visualization",
-                email: "",
-                homepage: "#",
-                img: "images/people/profile.png"
-              },
-              {
-                name: "Chunliang Hua",
-                role: "GeoAI, Autonomous Drone Planning",
                 email: "",
                 homepage: "#",
                 img: "images/people/profile.png"
@@ -526,11 +467,11 @@
                 homepage: "#",
                 img: "images/people/profile.png"
               },
-              { name: "Zhecheng Shi", 
-              role: "", 
-              email: "", 
-              homepage: "#", 
-              img: "images/people/profile.png" }
+              // { name: "Zhecheng Shi", 
+              // role: "", 
+              // email: "", 
+              // homepage: "#", 
+              // img: "images/people/profile.png" }
             ],
 
           // Visiting Students
@@ -778,14 +719,24 @@
         ];
         // --- 资源与数据列表页数据 ---
         const RESOURCES_LIST_ITEMS = [
-            {
-                id: 4, title: "Foursquare2ArcGIS",
-                desc: "Foursquare Open Source Places (FSQ OS Places) is a high-quality, open POI (Points of Interest) dataset released by Foursquare, containing over 104 million POIs worldwide. While platforms like OpenStreetMap (OSM) and Overture Maps aim to improve open POI coverage, FSQ OS Places provides a more extensive and precise dataset. This repository provides a step-by-step guide on downloading POI data and converting it from GeoJSON to Shapefile (SHP) for use in ArcGIS Pro, QGIS, and other GIS applications.",
-                img: "images/research/f2a.png", 
-                date: "https://github.com/ai4city-hkust/Foursquare2ArcGIS",
-                link: "https://github.com/ai4city-hkust/Foursquare2ArcGIS",
+            {
+                id: 6, title: "MeTreec v1.0",
+                desc: `MeTreec is a "one-stop" processing pipeline designed for individual tree point clouds:
+It receives segmented individual tree point clouds (.xyz format, Z-axis oriented upwards), calls AdTree (Du et al., 2019) to complete the 3D reconstruction, and subsequently performs mesh repair (hole filling) based on CGAL. It then calculates key tree metrics—such as Tree Height, Diameter at Breast Height (DBH), Crown Radius (CR), Crown Depth (CD), and Volume/Surface Area—from the skeleton or filtered leaf nodes. Simultaneously, it outputs a single JSON report and a batch CSV summary file.`,
+                img: "images/resource/metree.jpg", 
+                date: "https://github.com/stscl/gdverse",
+                link: "https://github.com/stscl/gdverse",
                 
             },
+            {
+                id: 5, title: "gdverse: An R Package for Spatial Stratified Heterogeneity Family",
+                desc: "The lack of a comprehensive and user-friendly software tool has greatly limitedtheir broader application in geospatial analysis and environmental modeling. To address this gap, an R package gdverse has beendeveloped to integrate various SSH models, leveraging R's rich statistical and spatial data processing capabilities while natively supporting multicore parallel computing in the widely used R environment.",
+                img: "images/resource/gdverse.png", 
+                date: "https://github.com/stscl/gdverse",
+                link: "https://github.com/stscl/gdverse",
+                
+            },
+            
             {
                 id: 3-1, title: "spEDM: Spatial Empirical Dynamic Modeling",
                 desc: "spEDM is an R package for spatial causal discovery. It extends Empirical Dynamic Modeling (EDM) from time series to spatial cross-sectional data, provides seamless support for vector and raster spatial data via tight integration with the sf and terra packages, and enables data-driven causal inference from spatial snapshots.",
@@ -802,6 +753,14 @@
                 link: "https://stscl.github.io/tEDM/",
                 
             },
+            {
+                id: 4, title: "Foursquare2ArcGIS",
+                desc: "Foursquare Open Source Places (FSQ OS Places) is a high-quality, open POI (Points of Interest) dataset released by Foursquare, containing over 104 million POIs worldwide. While platforms like OpenStreetMap (OSM) and Overture Maps aim to improve open POI coverage, FSQ OS Places provides a more extensive and precise dataset. This repository provides a step-by-step guide on downloading POI data and converting it from GeoJSON to Shapefile (SHP) for use in ArcGIS Pro, QGIS, and other GIS applications.",
+                img: "images/research/f2a.png", 
+                date: "https://github.com/ai4city-hkust/Foursquare2ArcGIS",
+                link: "https://github.com/ai4city-hkust/Foursquare2ArcGIS",
+                
+            },
             {
                 id: 2, title: "BuildingView",
                 desc: "BuildingView is an advanced tool designed to enhance urban analysis by integrating high-resolution visual data from Google Street View with spatial information from OpenStreetMap via the Overpass API. This tool focuses on creating detailed urban building exterior databases, identifying critical indicators for energy efficiency, environmental sustainability, and human-centric design. Through a systematic approach involving literature review, Street View sampling, and annotation using the ChatGPT-4.0 API, BuildingView improves the precision of urban building data.",
@@ -814,8 +773,9 @@
         
 
         // ==========================================
-        // 2. 工具组件：滚动显示动画
+        // 2. 工具组件
         // ==========================================
+        //滚动显示动画
         const FadeInSection = ({ children, className = "" }) => {
             const [isVisible, setVisible] = useState(false);
             const domRef = useRef();
@@ -839,6 +799,9 @@
                 </div>
             );
         };
+        
+        
+
 
         // ==========================================
         // 3. UI 组件，页面样式
@@ -846,6 +809,7 @@
         //导航栏
         const Navbar = ({ currentPage, setPage, scrollToAbout }) => {
           const [isScrolled, setIsScrolled] = useState(false);
+          const [isMenuOpen, setIsMenuOpen] = useState(false);
 
           useEffect(() => {
             const handleScroll = () => setIsScrolled(window.scrollY > 50);
@@ -861,9 +825,14 @@
           }`;
 
           const handleNavClick = (id) => {
-              
-                  setPage(id);
-              
+              setPage(id);
+              // 关闭菜单（如果它是打开的）
+              setIsMenuOpen(false); // 在点击链接后关闭菜单
+          };
+          
+          // 步骤 2: 切换菜单状态的函数
+          const toggleMenu = () => {
+              setIsMenuOpen(!isMenuOpen);
           };
 
           return (
@@ -905,8 +874,33 @@
                   >
                   </div>
                 </a>
-                <Menu className="lg:hidden cursor-pointer" />
+                <div 
+                    className="lg:hidden cursor-pointer p-2" 
+                    onClick={toggleMenu}
+                >
+                    {/* 根据状态显示汉堡图标或关闭图标 */}
+                    {isMenuOpen ? <X size={28} /> : <Menu size={28} />}
+                </div>
               </div>
+              {/* 根据 isMenuOpen 状态来条件渲染菜单 */}
+              {isMenuOpen && (
+                  <div className={`${isHome && !isScrolled ? 'text-white' : 'text-black'} lg:hidden absolute top-[81px] left-0 w-full bg-white shadow-lg border-t border-gray-200`}>
+                      <ul className="flex flex-col p-4 space-y-2">
+                          {NAV_LINKS.map(link => (
+                              <li key={link.id}>
+                                  <button 
+                                      onClick={() => handleNavClick(link.id)}
+                                      className={`w-full text-left py-2 text-xl font-medium capitalize transition hover:bg-gray-100 ${
+                                          currentPage === link.id ? 'text-blue-600 font-bold' : ''
+                                      }`}
+                                  >
+                                      {link.label}
+                                  </button>
+                              </li>
+                          ))}
+                      </ul>
+                  </div>
+              )}
             </nav>
           );
         };
@@ -975,7 +969,7 @@
         // 1. 主页 (Home Page)
         
         const HomePage = ({ setPage, aboutRef }) => (
-          <div className="w-full pb-[600px]">
+          <div className="w-full pb-[240px]">
             {/* Hero Section（实验室大标题，seminar信息等） */}
             <div className="relative w-full h-[320px] md:h-[100vh] bg-gray-900 text-white flex justify-center">
               <video
@@ -1060,6 +1054,7 @@
                 </div>
               </FadeInSection>*/}
               {/* 这是新的News的容器，下滑表单 */}
+              
               <FadeInSection className="max-w-7xl mx-auto px-6 py-20">
                 <div className="flex flex-col lg:flex-row gap-12 lg:gap-20">
                     
@@ -1155,7 +1150,7 @@
                     <h2 className="px-5 text-4xl sm:text-[64px] font-bold leading-none text-left">People</h2>
                     <div className="p-6 flex flex-col justify-center text-left">
                       <p className="text-lg lg:text-lg text-black mb-6 text-left">
-                        Our team is a diverse and talented group of researchers, including PhD candidates, MPhil students, Research Associates (RAs), and visiting students from around the world. Each member brings unique expertise and perspectives from varied academic and professional backgrounds, creating a dynamic collaborative environment. Together, we are committed to advancing cutting-edge research in AI-driven urban modeling and making meaningful contributions to sustainable city development.
+                        Our team is a diverse and talented group of researchers, including PhD candidates, MPhil students, Research Assistant (RAs), and visiting students from around the world. Each member brings unique expertise and perspectives from varied academic and professional backgrounds, creating a dynamic collaborative environment. Together, we are committed to advancing cutting-edge research in AI-driven urban modeling and making meaningful contributions to sustainable city development.
                       </p>
                       <button onClick={() => setPage('team')} className="text-black font-bold hover:underline flex items-center">Meet Our Team <ChevronRight size={16}/> </button>
                     </div>
@@ -1290,25 +1285,42 @@
                                             </span>
                                           </div>
                                         </a>
+                                        {/* Scholar */}
+                                        <a 
+                                          href="https://scholar.google.com/citations?user=SE267o4AAAAJ" 
+                                          target="_blank" 
+                                          className="flex items-center gap-4 p-2 -mx-2 rounded-lg hover:bg-gray-50 transition-colors group"
+                                        >
+                                          <div className="text-gray-400 group-hover:text-blue-600 transition-colors">
+                                            <GraduationCap size={20} />
+                                          </div>
+                                          
+                                          <div className="flex flex-col">
+                                            <span className="text-xs text-gray-400 font-semibold uppercase tracking-wider">Google Scholar</span>
+                                            <span className="text-sm font-medium text-gray-700 group-hover:text-blue-600 transition-colors">
+                                              Wufan Zhao
+                                            </span>
+                                          </div>
+                                        </a>
                                     </div>
                                 </div>
                             </div>
                             {/* 右侧：文字与经历 */}
                             <div className="flex-1 w-2/3">
                                 <h2 className="text-3xl md:text-4xl font-bold mb-1">{TEAM_DATA.pi.name}</h2>
-                                <p className="text-lg md:text-xl text-gray-500 mb-6">{TEAM_DATA.pi.role}</p>
-                                <p className="text-lg md:text-lg text-gray-700 leading-relaxed text-justify whitespace-pre-line">{TEAM_DATA.pi.bio}</p>
+                                <p className="text-md md:text-md text-gray-500 mb-6">{TEAM_DATA.pi.role}</p>
+                                <p className="text-md md:text-md text-gray-700 leading-relaxed text-justify whitespace-pre-line">{TEAM_DATA.pi.bio}</p>
                                 {/*这里注释掉的是原版的pi个人教育经历等版式*/}
                                 <h3 className="text-2xl md:text-2xl font-bold mb-1 pt-6">Service</h3>
                                 <ul className="list-disc pl-6 space-y-1">
                                   {TEAM_DATA.pi.edu.map((item, index) => (
-                                    <li key={index} className="text-lg rounded-lg font-bold text-gray-700">{item}</li>
+                                    <li key={index} className="text-md rounded-lg  text-gray-700">{item}</li>
                                   ))}
                                 </ul>
                                 <h3 className="text-2xl md:text-2xl font-bold mb-1 pt-6">Teaching</h3>
                                 <ul className="list-disc pl-6 space-y-1">
                                   {TEAM_DATA.pi.Awards.map((item, index) => (
-                                    <li key={index} className="text-lg rounded-lg font-bold text-gray-700">{item}</li>
+                                    <li key={index} className="text-md rounded-lg  text-gray-700">{item}</li>
                                   ))}
                                 </ul>
                                 {/*<h3 className="text-2xl md:text-2xl font-bold mb-1 pt-6">Research Interests</h3>
@@ -1332,7 +1344,7 @@
                                         <a href={member.homepage} className="font-bold text-lg mb-1 hover:text-blue-600 transition" target="_blank">
                                             {member.name}
                                         </a>
-                                        <p className="text-xs font-medium text-gray-500 uppercase tracking-wide mb-3 min-h-[32px]">{member.role}</p>
+                                        <p className="text-xs font-medium text-gray-500 tracking-wide mb-3 min-h-[32px]">{member.role}</p>
                                         <a href={`mailto:${member.email}`} className="text-xs text-blue-500 flex items-center gap-1 hover:underline"><Mail size={12}/> {member.email}</a>
                                     </FadeInSection>
                               
@@ -1729,13 +1741,31 @@
                             {/* 实验室介绍文本 */}
                             <div className="w-full mb-24 text-lg text-gray-700 leading-relaxed space-y-6 gap-12  text-justify">
                                 <div>
-                                <h2 className="text-3xl font-bold text-gray-900 mb-4">HKUST (Guangzhou) Introduction</h2>  
+                                <h2 className="text-3xl font-bold text-gray-900 mb-4">
+                                  <a 
+                                    href="https://www.hkust-gz.edu.cn/zh/?variant=zh-cn/" 
+                                    target="_blank" 
+                                    rel="noreferrer" 
+                                    className="hover:text-blue-600 transition-colors"
+                                >
+                                    HKUST (Guangzhou) Introduction
+                                </a>
+                                </h2> 
                                 <p> HKUST (Guangzhou) Introduction
                                     Hong Kong University of Science and Technology (Guangzhou) is a cooperation university between the Mainland and Hong Kong approved by the Ministry of Education. It was formally established in June 2022. HKUST (Guangzhou) is committed to innovation, featuring interdisciplinary development, and exploring innovative talent cultivation models. Its mission is to become a paradigm for the integration and development of Mainland and Hong Kong education and an internationally renowned, high-level university dedicated to cultivating high-level, innovative talents for the future.
                                 </p>
                                 </div>
                                 <div>
-                                <h2 className="text-3xl font-bold text-gray-900 mb-4">The Society Hub</h2>
+                                <h2 className="text-3xl font-bold text-gray-900 mb-4">
+                                  <a 
+                                    href="https://www.hkust-gz.edu.cn/academics/hubs-and-thrust-areas/society-hub/" 
+                                    target="_blank" 
+                                    rel="noreferrer" 
+                                    className="hover:text-blue-600 transition-colors"
+                                >
+                                    The Society Hub
+                                </a>
+                                </h2>
                                 <p>
                                     The Society Hub is one of the four academic hubs at HKUST (Guangzhou). It observes social development dynamics, actively aligns with national development strategies, and responds to market demands by providing policy and institutional innovation solutions.
                                 </p>
@@ -1755,18 +1785,24 @@
                                         Long-term openings for RA and PhD positions in the Lab. Applications are welcome, students with a master’s degree background are preferred. 
                                         PhD students will be admitted in January and September each year.
                                         <br/><br/>
-                                        Undergraduate students are encouraged to apply for the <a href="https://www.hkust-gz.edu.cn/academics/education-innovation/red-bird-mphil-program/" target="_blank" rel="noreferrer" className="underline hover:text-blue-600 font-bold">RedBird MPhil of HKUST-gz</a>. 
-                                        Postdoc positions are open with competitive salary packages.
+                                        Undergraduate students are encouraged to apply for the <a href="https://www.hkust-gz.edu.cn/academics/education-innovation/red-bird-mphil-program/" target="_blank" rel="noreferrer" className="underline hover:text-blue-600 font-bold">RedBird MPhil of HKUST-gz</a>. <br/><br/>
+                                        You can also to <a href="https://www.hkust-gz.edu.cn/academics/education-innovation/red-bird-mphil-program/" target="_blank" rel="noreferrer" className="underline hover:text-blue-600 font-bold"> see more about our lab recruitment</a>. 
                                     </p>
                                 </div>
                             </div>
 
                             
                         </FadeInSection>
-
+                        {/* 研究方向大图 */}
+                        <div className="w-full mb-24">
+                            <div className="w-full bg-gray-50 rounded-2xl overflow-hidden border border-gray-200 shadow-sm">
+                                <img src="images/frontPage/research-field.jpg" className="w-full h-auto object-cover" alt="Research Diagram" />
+                            </div>
+                            <p className="text-center text-sm text-gray-400 mt-3 italic">Overview of AI4City Lab Research Framework</p>
+                        </div>
 
                         {/* =========================================
-                              2. 中部区域：联系与社交链接 (5个独立卡片)
+                             联系与社交链接 (5个独立卡片)
                             ========================================= */}
                           <div className="mb-24">
                               <h2 className="text-3xl font-bold mb-8">Contact & Connect</h2>
@@ -1833,13 +1869,7 @@
 
                               </div>
                           </div>
-                        {/* 研究方向大图 */}
-                        <div className="w-full mb-24">
-                            <div className="w-full bg-gray-50 rounded-2xl overflow-hidden border border-gray-200 shadow-sm">
-                                <img src="images/frontPage/research-field.jpg" className="w-full h-auto object-cover" alt="Research Diagram" />
-                            </div>
-                            <p className="text-center text-sm text-gray-400 mt-3 italic">Overview of AI4City Lab Research Framework</p>
-                        </div>
+                        
                     </div>
                 </div>
             );
