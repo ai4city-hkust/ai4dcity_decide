@@ -449,14 +449,14 @@
               {
                 name: "Haoran Gong",
                 role: "computer vision, point clouds, and 3D reconstruction",
-                email: "",
+                email: "gonghr@stu.xjtu.edu.cn",
                 homepage: "#",
                 img: "images/people/gonghaoran.jpg"
               },
               {
                 name: "Sihan Li",
                 role: "GIS, Information Visualization",
-                email: "",
+                email: "15902090311@163.com",
                 homepage: "#",
                 img: "images/people/profile.png"
               },
@@ -464,6 +464,13 @@
                 name: "Qican Weng",
                 role: "Spatial science, GeoAI, Visualization",
                 email: "626710943@QQ.com",
+                homepage: "#",
+                img: "images/people/profile.png"
+              },
+              {
+                name: "Qinghe Liu",
+                role: "Intelligent point cloud processing",
+                email: "liuqinghe@nwafu.edu.cn",
                 homepage: "#",
                 img: "images/people/profile.png"
               },
@@ -527,14 +534,19 @@
               {
                 name: "Xijing Huang",
                 role: "Multi-agent social simulation, Agent-Based Modeling, Computational social science",
-                email: "",
+                email: "huangxijing3@foxmail.com",
                 homepage: "#",
-                img: "images/people/profile.png"
+                img: "images/people/huangxijing.jpg"
               }
             ],
 
             // Alumni
             alu: [
+              { name: "Hongrong Wang", 
+              role: "Studying for Msc in CUHK(Shenzhen)", 
+              email: "b1520618977@163.com", 
+              homepage: "#", 
+              img: "images/people/wanghongrong.png" },
               { name: "Zongrong Li", 
               role: "Phd at TAMU", 
               email: "zongrongli@hkust-gz.edu.cn", 
@@ -556,7 +568,7 @@
               },
               {
                 name: "Rui Zhang",
-                role: "Phd at Aarhus University",
+                role: "European job-based doctoral program",
                 email: "",
                 homepage: "#",
                 img: "images/people/zhangrui.png"
@@ -724,8 +736,8 @@
                 desc: `MeTreec is a "one-stop" processing pipeline designed for individual tree point clouds:
 It receives segmented individual tree point clouds (.xyz format, Z-axis oriented upwards), calls AdTree (Du et al., 2019) to complete the 3D reconstruction, and subsequently performs mesh repair (hole filling) based on CGAL. It then calculates key tree metrics—such as Tree Height, Diameter at Breast Height (DBH), Crown Radius (CR), Crown Depth (CD), and Volume/Surface Area—from the skeleton or filtered leaf nodes. Simultaneously, it outputs a single JSON report and a batch CSV summary file.`,
                 img: "images/resource/metree.jpg", 
-                date: "https://github.com/stscl/gdverse",
-                link: "https://github.com/stscl/gdverse",
+                date: "https://github.com/ai4city-hkust/Metreec-v1.0",
+                link: "https://github.com/ai4city-hkust/Metreec-v1.0",
                 
             },
             {
@@ -1001,34 +1013,7 @@ It receives segmented individual tree point clouds (.xyz format, Z-axis oriented
             {/* 这一级是hero大图下面所有子模块的父容器 */}
             <div className="max-w-[1920px] mx-auto px-0 py-12 md:py-16 space-y-64"> 
               
-              {/* 主页的关于我们页(移去) */}
-              {/* <FadeInSection>
-                  <div id="about-section" ref={aboutRef} className="pt-12">
-                      <div className="max-w-4xl mx-auto text-center mb-8 px-0">
-                          <h2 className="text-4xl sm:text-5xl font-bold mb-6">About Us</h2>
-                          <h3 className="text-2xl font-semibold mb-4">AI 4D City(AI4CITY) Lab</h3>
-                          <div>
-                          <a href="mailto:wufanzhao@hkust-gz.edu.cn" target="_blank" class="text-blue-500 underline">wufanzhao@hkust-gz.edu.cn</a>
-                            <br/>
-                          <a href="https://www.openstreetmap.org/?#map=17/22.891298/113.476131&layers=N" target="_blank" class="text-blue-500 underline">HKUST(GZ)E1 L4 408</a><br/>
-                          <a href="https://github.com/ai4city-hkust" target="_blank" class="text-blue-500 underline">Github</a><br/>
-                          <a href="https://scholar.google.com/citations?user=SE267o4AAAAJ" target="_blank" class="text-blue-500 underline">Google Scholar</a><br/>
-                          <a href="https://www.linkedin.com/in/wufan-zhao/" target="_blank" class="text-blue-500 underline">LinkedIn</a><br/>
-                          </div>
-                          <p className="text-lg text-gray-600 leading-relaxed text-justify">
-                              4D refers to 3D space plus time series modeling. As the type and density of the remote sensing data continue to grow exponentially, Dr. Wufan Zhao and his AI4City Lab aim to help pioneer computationally efficient AI-based processing and modeling strategies to solve complex and practical urban problems by integrating the multi-dimensional/modal characteristics of big earth observation data.<br/>
-                              <br/>
-                              Long-term openings for RA and PhD positions in the Lab. Applications are welcome, students with a master’s degree background are preferred. PhD students will be admitted in January and September each year. Please refer to the official guidelines for more details.<br/>
-                              <br/>
-                              Undergraduate students are encouraged to apply for the <a href="https://www.hkust-gz.edu.cn/academics/education-innovation/red-bird-mphil-program/" target="_blank" class="text-blue-500 underline">RedBird MPhil of HKUST-gz</a>. Postdoc positions are open. Very competitive salary and research fund package. Welcome to drop your resume and research proposal.<br/>
-                          </p>
-                      </div> */} 
-                      {/* 修复: 图片容器宽度与文字一致 max-w-4xl，居中，直角 */}
-                      {/* <div className="w-full h-full max-w-4xl mx-auto aspect-auto bg-gray-100 overflow-hidden shadow-sm mb-12 rounded-none">
-                          <img src="images/frontPage/research-field.jpg" className="w-full h-full object-cover" alt="Research Diagram" />
-                      </div>
-                  </div>
-              </FadeInSection>*/}
+              
 
               {/* 这是原来News的容器，是像MIT的medialab那样的图文卡片 */}
               {/* <FadeInSection className="flex flex-col md:flex-row gap-8 lg:gap-12">
@@ -1786,7 +1771,7 @@ It receives segmented individual tree point clouds (.xyz format, Z-axis oriented
                                         PhD students will be admitted in January and September each year.
                                         <br/><br/>
                                         Undergraduate students are encouraged to apply for the <a href="https://www.hkust-gz.edu.cn/academics/education-innovation/red-bird-mphil-program/" target="_blank" rel="noreferrer" className="underline hover:text-blue-600 font-bold">RedBird MPhil of HKUST-gz</a>. <br/><br/>
-                                        You can also to <a href="https://www.hkust-gz.edu.cn/academics/education-innovation/red-bird-mphil-program/" target="_blank" rel="noreferrer" className="underline hover:text-blue-600 font-bold"> see more about our lab recruitment</a>. 
+                                        You can also <a href="https://www.hkust-gz.edu.cn/academics/education-innovation/red-bird-mphil-program/" target="_blank" rel="noreferrer" className="underline hover:text-blue-600 font-bold"> explore more about our lab recruitment</a>. 
                                     </p>
                                 </div>
                             </div>
