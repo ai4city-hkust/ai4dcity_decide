@@ -1,4 +1,8 @@
 # Ai4City 新网站
+## v1.01.1228 (Dec 14, 2025)
+1.Automated Generation of 3D Building Models in  LoD3...
+2.自动填写首页upcoming seminar的内容
+
 ## v1.01.1216 (Dec 14, 2025)
 1.Geospatial Intelligence and Urban Sustainability seminar
 
