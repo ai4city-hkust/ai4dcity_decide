@@ -63,27 +63,29 @@
 
         // --- 文章详情内容 ---
         const ARTICLE_CONTENT = {
-           'seminar': {
-                title: "Spatiotemporal Intelligence for Generalization and Decision-Making: Perspectives from Cross-Scale, Cross-Domain, and Cross-Agent Views",
-                subtitle: "",
-                date: "14:00 - 15:30 , December 31, 2025",
-                author: "Dr. Zhengyang Zhou",
-                img: "images/seminar/zhouzhengyang.jpg",
-                abstract: "The rapid growth of global cities and the conflict with sustainable development has become a real challenge. This talk will focus on key scientific issues in spatiotemporal intelligence, particularly the bottlenecks such as scale effects, domain heterogeneity, and the disconnection between prediction and decision-making. It will propose technical paths for cross-scale modeling, cross-domain generalized learning, and cross-agent collaborative decision-making. The speaker will highlight multi-scale spatiotemporal interaction modeling methods and efficient generalization techniques for spatiotemporal intelligence models across time, space, and task scenarios.",
-                body: [
-                    "Spatiotemporal intelligence is driving Earth observation and urban science into a new phase, offering new pathways to address urban sustainability and the impacts of human activities on the natural environment. Key challenges include effectively integrating geospatial characteristics into models, which is essential for solving real-world problems across natural, built, and social environments.",
-                    "This talk will present emerging theories and methods in spatiotemporal science, demonstrate related open-source tools, and through case studies, examine the role of spatial intelligence in sustainability topics such as resource monitoring and urban infrastructure."
-                ],
-                details: [
-                    { text: "Tencent Meeting: 282-333-375" },
-                ]
-            },
-          'Fanseminar': {
+            'seminar': {
+        title: "Dynamic Sensing of Urban Physical Space and Assessment of Its Socio-Environmental Effects",
+        subtitle: "",
+        date: "14:00 – 15:30, January 13, 2026 (GMT+08:00, Beijing Time)",
+        site: "Tencent Meeting (Online)",
+        author: "Chaoqun Zhang",
+        img: "images/seminar/640 (6).png",
+        abstract: "The evolution of urban physical space and its interaction with human activities is a central topic in the study of complex urban systems. Advances in multi-source remote sensing and social sensing big data have significantly enhanced the mapping, monitoring, and modeling of urban physical environments and their social impacts. This talk addresses key challenges in monitoring urban physical space and quantifying its relationship with human activities, with a particular focus on multi-source data fusion methods for urban construction activity detection and material environment monitoring.",
+        body: [
+            "This talk introduces remote sensing techniques for identifying urban construction activities and estimating long-term, high-resolution building material stocks. These methods enable a more accurate understanding of the material dynamics of cities and their temporal evolution.",
+            "The presentation further examines the impacts of urban construction on air pollution and carbon emissions, and explores how multi-source remote sensing data, street-view imagery, and social media data can be integrated to quantify the dynamic interactions between humans and the built environment."
+        ],
+        details: [
+            { text: "Online: Tencent Meeting" },
+            { text: "Meeting ID: 442-185-863" },
+        ]
+    },
+          'Zhouseminar': {
                 title: "Automated Generation of 3D Building Models in LoD3 from Multi-Sourced RS Data",
                 subtitle: "",
                 date: "10:00 - 11:30, December 30, 2025",
                 site:"E1-147, HKUST(GZ)",
-                author: "Prof. Hongchao Fan",
+                author: "Dr. Zhengyang Zhou",
                 img: "images/seminar/RSDATA.jpg",
                 abstract: "LoD3 building models are important elements in digital twins of cities. They include complicated roof structures and detailed façade geometries with rich semantic information. In this talk, Prof. Fan will present the recent research findings in automated 3D roof modelling and building façade generation from both image and Lidar point clouds data. He will share his experiences about using deep learning-based methods and conventional rule-based methods for 3D modelling, and discuss the recent tendency of using deep-learning technology in Geomatics.",
                 body: [
@@ -224,7 +226,13 @@
         // --- 首页数据 ---
         // 新闻 (6个格子)
         const NEWS_ITEMS = [
-            { id: 103, 
+            { id: 105, 
+              title: ARTICLE_CONTENT['Zhouseminar'].title, 
+              desc: ARTICLE_CONTENT['Zhouseminar'].subtitle, 
+              meta: ARTICLE_CONTENT['Zhouseminar'].date, 
+              img: ARTICLE_CONTENT['Zhouseminar'].img, 
+              articleId: 'Zhouseminar' },
+            { id: 104, 
               title: ARTICLE_CONTENT['SONGseminar'].title, 
               desc: ARTICLE_CONTENT['SONGseminar'].subtitle, 
               meta: ARTICLE_CONTENT['SONGseminar'].date, 
@@ -1227,9 +1235,10 @@ It receives segmented individual tree point clouds (.xyz format, Z-axis oriented
                         <h1 className="text-5xl md:text-6xl font-bold mb-12 md:mb-16">Meet our team</h1>
                         
                         {/* PI卡片样式*/}
-                        <div className="w-full h-full bg-slate-100 p-8 md:p-12 flex flex-col md:flex-row gap-8 md:gap-16 items-top mb-20 rounded-none">
+                        <div className="w-full bg-slate-100 p-6 md:p-12 flex flex-col md:flex-row gap-8 md:gap-16 mb-20">
                             {/* 左侧：照片和联系方式 */}
-                            <div className="w-full md:w-1/3 flex flex-col items-center md:items-start sticky top-24">
+                            <div className="w-full md:w-1/3 flex flex-col items-center md:items-start md:sticky md:top-24">
+
                                 <img src={TEAM_DATA.pi.img} alt={TEAM_DATA.pi.name} className="w-48 h-48 md:w-64 md:h-64 lg:w-80 lg:h-80 mb-8 rounded-full object-cover shadow-lg border-4 border-white" />
                                 
                                 {/* 修复: 美化的联系方式卡片 */}
@@ -1314,7 +1323,7 @@ It receives segmented individual tree point clouds (.xyz format, Z-axis oriented
                                 </div>
                             </div>
                             {/* 右侧：文字与经历 */}
-                            <div className="flex-1 w-2/3">
+                            <div className="w-full md:flex-1">
                                 <h2 className="text-3xl md:text-4xl font-bold mb-1">{TEAM_DATA.pi.name}</h2>
                                 <p className="text-md md:text-md text-gray-500 mb-6">{TEAM_DATA.pi.role}</p>
                                 <p className="text-md md:text-md text-gray-700 leading-relaxed text-justify whitespace-pre-line">{TEAM_DATA.pi.bio}</p>
